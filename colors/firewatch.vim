@@ -5,7 +5,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "firewatch"
+let g:colors_name = "anderson"
 
 " colors
 let s:cyan      =  73
@@ -17,7 +17,7 @@ let s:pink      = 181
 let s:pink_dark = 131
 let s:tan       = 180
 let s:white     = 255
-let s:gray      = 249
+let s:gray      = 251
 let s:gray_dark = 236
 
 " h(ex)_colors
@@ -30,7 +30,7 @@ let s:h_pink      = "#c8ae9d"
 let s:h_pink_dark = "#be5046"
 let s:h_tan       = "#e5c07b"
 let s:h_white     = "#ebebff"
-let s:h_gray      = "#abb2bf"
+let s:h_gray      = "#c6c6c6"
 let s:h_gray_dark = "#282c34"
 
 " aliases
@@ -54,6 +54,7 @@ exe "let s:underline    = ' cterm=UNDERLINE'"
 
 " definitions
 exe "hi! Normal"     .s:bg_none .s:fg_gray
+exe "hi! CursorLine" .s:bg_none .s:bg_none .s:normal
 exe "hi! Comment"    .s:bg_none .s:fg_gray
 exe "hi! Constant"   .s:bg_none .s:fg_red
 exe "hi! String"     .s:bg_none .s:fg_tan
