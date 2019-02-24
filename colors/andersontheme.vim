@@ -36,6 +36,7 @@ let s:h_gray_dark = "#282c34"
 " aliases
 exe "let s:bg_none      = ' guibg=NONE                ctermbg=NONE'"
 exe "let s:bg_gray      = ' guibg=" .s:h_gray.      " ctermbg=" .s:gray. "'"
+exe "let s:bg_gray_dark      = ' guibg=" .s:h_gray_dark.      " ctermbg=" .s:gray_dark. "'"
 exe "let s:fg_cyan      = ' guifg=" .s:h_cyan.      " ctermfg=" .s:cyan. "'"
 exe "let s:fg_blue      = ' guifg=" .s:h_blue.      " ctermfg=" .s:blue. "'"
 exe "let s:fg_red       = ' guifg=" .s:h_red.       " ctermfg=" .s:red. "'"
@@ -54,7 +55,7 @@ exe "let s:underline    = ' cterm=UNDERLINE'"
 
 " definitions
 exe "hi! Normal"     .s:bg_none .s:fg_gray
-exe "hi! CursorLine" .s:bg_none .s:bg_none .s:normal
+exe "hi! CursorLine" .s:bg_none .s:bg_gray_dark .s:normal
 exe "hi! Comment"    .s:bg_none .s:fg_gray
 exe "hi! Constant"   .s:bg_none .s:fg_red
 exe "hi! String"     .s:bg_none .s:fg_tan
